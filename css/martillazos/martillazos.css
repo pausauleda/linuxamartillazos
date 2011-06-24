@@ -109,7 +109,7 @@ border-radius: 20px 20px 20px 20px;
 }
 
 #content .section {
-padding: 10px;
+padding: 20px;
 }
 
 
@@ -148,4 +148,14 @@ fieldset {
   font-family: "Cantarell", Verdana, Tahoma, "DejaVu Sans", sans-serif;
 }
 
+/* user picture */
+.user-picture {
+float: right;
+}
 
+.user-picture > img {
+border: 3px solid #BB8855;
+-webkit-border-radius: 20px 20px 20px 20px;
+border-radius: 20px 20px 20px 20px;
+-moz-border-radius: 20px 20px 20px 20px;
+}
