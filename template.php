@@ -99,10 +99,11 @@ function linuxamartillazos_preprocess_page(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("node" in this case.)
  */
-/* -- Delete this line if you want to use this function
 function linuxamartillazos_preprocess_node(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
-
+$node = $variables['node'];
+$variables['fecha_dia'] = format_date($node->created, 'custom', 'j');
+$variables['fecha_mes'] = format_date($node->created, 'custom', 'M');
+$variables['fecha_anyo'] = format_date($node->created, 'custom', 'Y');
   // Optionally, run node-type-specific preprocess functions, like
   // linuxamartillazos_preprocess_node_page() or linuxamartillazos_preprocess_node_story().
   $function = __FUNCTION__ . '_' . $variables['node']->type;

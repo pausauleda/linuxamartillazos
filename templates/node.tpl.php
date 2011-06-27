@@ -96,10 +96,13 @@
   <?php endif; ?>
 
   <?php if ($display_submitted): ?>
-    <div class="submitted">
-      <?php print $submitted; ?>
-    </div>
+    <div class="submitted">Publicado por <?php print $name; ?></div>
   <?php endif; ?>
+    <div class="bloquefecha">
+      <span class="mes"><?php print $fecha_mes ?></span>
+      <span class="dia"><?php print $fecha_dia ?></span>
+      <span class="anyo"><?php print $fecha_anyo ?></span>
+    </div>
 
   <div class="content"<?php print $content_attributes; ?>>
     <?php
