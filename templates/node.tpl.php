@@ -85,6 +85,12 @@
 
   <?php print $user_picture; ?>
 
+    <div class="bloquefecha">
+      <div class="mes"><?php print $fecha_mes ?></div>
+      <div class="dia"><?php print $fecha_dia ?></div>
+      <div class="anyo"><?php print $fecha_anyo ?></div>
+    </div>
+
   <?php print render($title_prefix); ?>
   <?php if (!$page && $title): ?>
     <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
@@ -98,11 +104,6 @@
   <?php if ($display_submitted): ?>
     <div class="submitted">Publicado por <?php print $name; ?></div>
   <?php endif; ?>
-    <div class="bloquefecha">
-      <span class="mes"><?php print $fecha_mes ?></span>
-      <span class="dia"><?php print $fecha_dia ?></span>
-      <span class="anyo"><?php print $fecha_anyo ?></span>
-    </div>
 
   <div class="content"<?php print $content_attributes; ?>>
     <?php
