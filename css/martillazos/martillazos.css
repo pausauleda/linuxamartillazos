@@ -211,3 +211,11 @@ text-transform: uppercase;
 font-size: 200%;
 line-height: 80%;
 }
+
+/* no mostrar seleccion formato de texto */
+#edit-comment-body-und-0-format {
+width: 0px;
+height: 0px;
+visibility: hidden;
+}
+
