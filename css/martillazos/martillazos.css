@@ -113,6 +113,17 @@ padding: 20px;
 }
 
 
+#content .views-row {
+border-bottom: 5px dotted #BB8855;
+margin-bottom: 20px;
+}
+
+#content .views-row-last {
+border-bottom: none;
+}
+
+
+
 /* columna izquierda */
 .region-sidebar-first .section {
 background-color: #558888;
