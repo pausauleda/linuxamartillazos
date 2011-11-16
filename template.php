@@ -104,6 +104,12 @@ $node = $variables['node'];
 $variables['fecha_dia'] = format_date($node->created, 'custom', 'j');
 $variables['fecha_mes'] = format_date($node->created, 'custom', 'M');
 $variables['fecha_anyo'] = format_date($node->created, 'custom', 'Y');
+
+// quitar el link "read more" de la variable links
+unset($variables['content']['links']['node']['#links']['node-readmore']);
+// creamos una variable propia para el link "read more"
+$variables['leermas'] = t('<span class="leermas"> <a href="!tittle">Leer Más</a></span>', array('!tittle' => $variables['node_url'],));
+
   // Optionally, run node-type-specific preprocess functions, like
   // linuxamartillazos_preprocess_node_page() or linuxamartillazos_preprocess_node_story().
   $function = __FUNCTION__ . '_' . $variables['node']->type;

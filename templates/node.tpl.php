@@ -83,7 +83,9 @@
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
+  <?php if ($teaser == false): ?>
   <?php print $user_picture; ?>
+  <?php endif; ?>
 
     <div class="bloquefecha">
       <div class="mes"><?php print $fecha_mes ?></div>
@@ -117,8 +119,14 @@
     ?>
   </div>
 
+  <?php if ($teaser == false): ?>
   <?php print render($content['links']); ?>
 
   <?php print render($content['comments']); ?>
+  <?php endif; ?>
+
+  <?php if ($teaser == true): ?>
+  <?php print $leermas; ?>
+  <?php endif; ?>
 
 </div><!-- /.node -->
