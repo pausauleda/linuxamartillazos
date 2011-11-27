@@ -128,5 +128,9 @@
   <?php if ($teaser == true): ?>
   <?php print $leermas; ?>
   <?php endif; ?>
+  
+  <?php if ($page == false): ?>
+  <div class="enlacecomentarios"><a href="<?php print $node_url; ?>#comments">Comentarios (<?php print $comment_count; ?>)</div>
+  <?php endif; ?>
 
 </div><!-- /.node -->
