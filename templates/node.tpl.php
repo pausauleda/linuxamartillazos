@@ -129,7 +129,7 @@
   <?php print $leermas; ?>
   <?php endif; ?>
   
-  <?php if ($page == false): ?>
+  <?php if (!$page && !$teaser): ?>
   <div class="enlacecomentarios"><a href="<?php print $node_url; ?>#comments">Comentarios (<?php print $comment_count; ?>)</div>
   <?php endif; ?>
 
