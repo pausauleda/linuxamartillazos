@@ -222,3 +222,8 @@ visibility: hidden;
 .enlacecomentarios {
 margin-bottom: 10px;
 }
+
+.service-links-identica:before {
+white-space: pre;
+content: "\A";
+}
