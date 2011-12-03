@@ -130,7 +130,7 @@
   <?php endif; ?>
   
   <?php if (!$page && !$teaser): ?>
-  <div class="enlacecomentarios"><a href="<?php print $node_url; ?>#comments">Comentarios (<?php print $comment_count; ?>)</div>
+  <div class="enlacecomentarios"><a href="<?php print $node_url; ?>#comments">Comentarios (<?php print $comment_count; ?>)</a></div>
   <?php endif; ?>
 
 </div><!-- /.node -->
