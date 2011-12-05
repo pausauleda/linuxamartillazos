@@ -214,9 +214,7 @@ line-height: 80%;
 
 /* no mostrar seleccion formato de texto */
 #edit-comment-body-und-0-format {
-width: 0px;
-height: 0px;
-visibility: hidden;
+display: none;
 }
 
 .enlacecomentarios {
@@ -238,4 +236,9 @@ padding-bottom: 5px;
 border-bottom: none;
 margin-bottom: 0px;
 padding-bottom: 0px;
+}
+
+/* ocultar selector de tipo y lenguaje en la busqueda avanzada */
+.form-item-type, .form-item-language {
+display: none;
 }
