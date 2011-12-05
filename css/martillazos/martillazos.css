@@ -175,7 +175,7 @@ border-radius: 20px 20px 20px 20px;
 /* alinear y indentar contenido */
 .content .field {
 text-align: justify;
-text-indent: 2em;
+/* text-indent: 2em; */
 }
 
 /* margenes contenido */
