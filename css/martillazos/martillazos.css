@@ -227,3 +227,15 @@ margin-bottom: 10px;
 white-space: pre;
 content: "\A";
 }
+
+.sidebar .content {
+border-bottom: 5px dotted #BB8855;
+margin-bottom: 20px;
+padding-bottom: 5px;
+}
+
+.sidebar .last .content {
+border-bottom: none;
+margin-bottom: 0px;
+padding-bottom: 0px;
+}
