@@ -115,6 +115,7 @@
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
+      hide($content['field_etiquetas']); // hay que llamar a hide() antes de hacer render()
       print render($content);
     ?>
   </div>
@@ -130,6 +131,7 @@
   <?php endif; ?>
   
   <?php if (!$page && !$teaser): ?>
+  <?php print render($content['field_etiquetas']); ?>
   <div class="visitasycomentarios">
   <div class="lecturas">Artículo con <?php $statistics = statistics_get($node->nid); if ($statistics) { print $statistics['totalcount']; } else { print "0"; } ?> visitas.</div>
   <div class="enlacecomentarios"><a href="<?php print $node_url; ?>#comments">Comentarios (<?php print $comment_count; ?>)</a></div>
