@@ -217,8 +217,17 @@ line-height: 80%;
 display: none;
 }
 
-.enlacecomentarios {
+.visitasycomentarios {
 margin-bottom: 10px;
+}
+
+.lecturas {
+display: inline;
+}
+
+.enlacecomentarios {
+display: inline;
+float: right;
 }
 
 .service-links-identica:before {
@@ -251,5 +260,9 @@ line-height: 200%;
 
 /* ocultar selector de tipo y lenguaje en la busqueda avanzada */
 .form-item-type, .form-item-language {
+display: none;
+}
+
+.links .statistics_counter {
 display: none;
 }

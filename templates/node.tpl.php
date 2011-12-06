@@ -130,7 +130,10 @@
   <?php endif; ?>
   
   <?php if (!$page && !$teaser): ?>
+  <div class="visitasycomentarios">
+  <div class="lecturas">Artículo con <?php $statistics = statistics_get($node->nid); if ($statistics) { print $statistics['totalcount']; } else { print "0"; } ?> visitas.</div>
   <div class="enlacecomentarios"><a href="<?php print $node_url; ?>#comments">Comentarios (<?php print $comment_count; ?>)</a></div>
+  </div>
   <?php endif; ?>
 
 </div><!-- /.node -->
