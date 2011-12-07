@@ -126,7 +126,16 @@
     <?php endif; ?>
 
   <?php print render($content['links']); ?>
-
+  <?php print render($content['field_etiquetas']); ?>
+  <div class="visitasycomentarios">
+  <div class="lecturas">Artículo con <?php $statistics = statistics_get($node->nid); if ($statistics) { print $statistics['totalcount']; } else { print "0"; } ?> visitas.</div>
+  <?php if (!$page): ?>
+    <div class="enlacecomentarios"><a href="<?php print $node_url; ?>#comments">Comentarios (<?php print $comment_count; ?>)</a></div>
+  <?php endif; ?>
+  <?php if ($page): ?>
+    <div class="enlacecomentarios"><?php print $comment_count; ?> comentarios</div>
+  <?php endif; ?>
+  </div>
   <?php print render($content['comments']); ?>
   <?php endif; ?>
 
@@ -134,12 +143,4 @@
   <?php print $leermas; ?>
   <?php endif; ?>
   
-  <?php if (!$page && !$teaser): ?>
-  <?php print render($content['field_etiquetas']); ?>
-  <div class="visitasycomentarios">
-  <div class="lecturas">Artículo con <?php $statistics = statistics_get($node->nid); if ($statistics) { print $statistics['totalcount']; } else { print "0"; } ?> visitas.</div>
-  <div class="enlacecomentarios"><a href="<?php print $node_url; ?>#comments">Comentarios (<?php print $comment_count; ?>)</a></div>
-  </div>
-  <?php endif; ?>
-
 </div><!-- /.node -->

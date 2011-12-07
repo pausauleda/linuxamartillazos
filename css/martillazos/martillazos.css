@@ -231,6 +231,7 @@ display: inline;
 }
 
 .enlacecomentarios {
+font-weight: bold;
 display: inline;
 float: right;
 }
