@@ -121,6 +121,10 @@
   </div>
 
   <?php if ($teaser == false): ?>
+    <?php if($type == 'entrada'): ?>
+      <div class="puntuacion">Puntúa este artículo: <?php print $node->rate_puntuacion['#markup']; ?></div>
+    <?php endif; ?>
+
   <?php print render($content['links']); ?>
 
   <?php print render($content['comments']); ?>

@@ -180,7 +180,11 @@ text-align: justify;
 
 /* margenes contenido */
 .content .field {
-margin-top: 35px;
+margin-top: 5px;
+}
+
+.view-mode-full .submitted {
+margin-bottom: 35px;
 }
 
 /* formato fecha post */
@@ -266,4 +270,24 @@ display: none;
 
 .links .statistics_counter {
 display: none;
+}
+
+.puntuacion {
+font-weight: bold;
+display: inline;
+float: right;
+}
+
+.rate-widget {
+display: inline;
+float: right;
+}
+
+.rate-widget .item-list ul {
+margin: 0px;
+padding-left: 5px;
+}
+
+.links {
+line-height: 50%;
 }
