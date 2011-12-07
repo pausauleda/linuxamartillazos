@@ -292,3 +292,21 @@ padding-left: 5px;
 .links {
 line-height: 50%;
 }
+
+.comment .permalink {
+display: none;
+}
+
+.comment .comment-reply {
+display: none;
+}
+
+.comment {
+padding: 5px;
+margin-top: 5px;
+margin-bottom: 5px;
+border: 1px solid #BB8855;
+-webkit-border-radius: 20px 20px 20px 20px;
+border-radius: 20px 20px 20px 20px;
+-moz-border-radius: 20px 20px 20px 20px;
+}
