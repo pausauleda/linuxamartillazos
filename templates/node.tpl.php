@@ -125,7 +125,8 @@
 
   <?php if ($teaser == false): ?>
     <?php if($type == 'entrada'): ?>
-      <div class="puntuacion">Puntúa este artículo: <?php print $node->rate_puntuacion['#markup']; ?></div>
+      <div class="totalvotos">(<?php $results = rate_get_results('node', $node->nid, 1); print $results['count']; ?> votos)</div>
+      <div class="puntuacion">Puntúa este artículo: <?php print $node->rate_puntuacion['#markup']; ?> </div>
     <?php endif; ?>
 
   <?php print render($content['links']); ?>

@@ -284,6 +284,12 @@ display: inline;
 float: right;
 }
 
+.totalvotos {
+display: inline;
+float: right;
+padding-left: 5px;
+}
+
 .rate-widget .item-list ul {
 margin: 0px;
 padding-left: 5px;
