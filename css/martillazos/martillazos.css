@@ -316,3 +316,24 @@ border: 1px solid #BB8855;
 border-radius: 20px 20px 20px 20px;
 -moz-border-radius: 20px 20px 20px 20px;
 }
+
+.comment-add {
+border-top: 2px dotted #BB8855;
+border-bottom: 2px dotted #BB8855;
+}
+
+.comment-add a:link {
+  color: #99FFFF;
+  font-weight: bold;
+  text-decoration:none;
+  }
+.comment-add a:visited {
+  color: #CCFFFF;
+  font-weight: bold;
+  text-decoration:none;
+  }
+.comment-add a:hover {
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration:underline;
+}
