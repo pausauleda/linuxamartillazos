@@ -48,7 +48,7 @@ $comment_form = render($content['comment_form']);
   <?php print $comments; ?>
 
   <?php if ($comment_form): ?>
-    <h2 class="title comment-form"><?php print t('Add new comment'); ?></h2>
+    <h2 class="title comment-form"><a href="user">Inicia sesión</a> o inserta comentario anónimo:</h2>
     <?php print $comment_form; ?>
   <?php endif; ?>
 </div>
