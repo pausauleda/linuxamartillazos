@@ -37,6 +37,8 @@
 // Render the comments and form first to see if we need headings.
 $comments = render($content['comments']);
 $comment_form = render($content['comment_form']);
+$destino = drupal_get_destination();
+$destino = $destino['destination'];
 ?>
 <div id="comments" class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <?php if ($comments && $node->type != 'forum'): ?>
@@ -48,7 +50,7 @@ $comment_form = render($content['comment_form']);
   <?php print $comments; ?>
 
   <?php if ($comment_form): ?>
-    <h2 class="title comment-form"><a href="user">Inicia sesión</a> o inserta comentario anónimo:</h2>
+    <h2 class="title comment-form"><?php print t('<a href="@login">Inicia sesión</a> o inserta comentario anónimo:', array('@login' => url('user', array('query' => array('current' => $destino), 'fragment' => 'comments')))) ?></h2>
     <?php print $comment_form; ?>
   <?php endif; ?>
 </div>
